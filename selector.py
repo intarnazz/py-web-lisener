@@ -57,7 +57,7 @@ class Selector:
 
     def run(self) -> bool:
         """
-        Запуск запуск терминала.
+        Запуск терминала.
 
         :return: bool
         """
