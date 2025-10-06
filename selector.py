@@ -62,7 +62,34 @@ class Selector:
         :return: bool
         """
         try:
-            found = self.checker.check(self.select())
+            result = self.select()
+            found = self.checker.check(result)
+
+#             import webview
+#             import json
+
+#             html = f"""
+#             <html>
+#             <head>
+#                 <meta charset="utf-8" />
+#                 <style>
+# * {{
+#     box-sizing: border-box !important;
+#     background-color: #000  !important;
+#     color: #fff !important;
+# }}
+#                 </style>
+#             </head>
+#             <body>
+#                 <h2>Результат выбора:</h2>
+#                 <pre>{json.dumps(result, ensure_ascii=False, indent=4)}</pre>
+#             </body>
+#             </html>
+#             """
+
+#             webview.create_window("Selector WebUI", html=html, width=600, height=400)
+#             webview.start()
+
             if not found:
                 print("\n❌ Ничего не найдено.")
                 input(
