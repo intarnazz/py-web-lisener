@@ -1,0 +1,2 @@
+print('gdfgf')
+input()

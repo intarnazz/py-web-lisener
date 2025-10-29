@@ -40,7 +40,7 @@ class Checker:
                 continue
 
             # проверяем первые две страницы
-            for page in range(1, 3):
+            for page in range(1, 5):
                 url = f"{self.setings.COMPUTER_URL}{path}/?slug={path}&page={page}"
 
                 try:
