@@ -41,7 +41,10 @@ class Checker:
 
             # проверяем первые две страницы
             for page in range(1, 5):
-                url = f"{self.setings.COMPUTER_URL}{path}/?slug={path}&page={page}"
+                if item['promo']:
+                    url = f"{self.setings.BASE_URL}/{path}/?page={page}"
+                else:
+                    url = f"{self.setings.COMPUTER_URL}/{path}/?slug={path}&page={page}"
 
                 try:
                     print(f"🔎 Проверка {url} ...")

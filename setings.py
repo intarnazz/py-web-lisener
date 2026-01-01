@@ -20,7 +20,7 @@ class Setings:
 
         # Константы
         self.BASE_URL = "https://fogplay.mts.ru"
-        self.COMPUTER_URL = f"{self.BASE_URL}/computer/"
+        self.COMPUTER_URL = f"{self.BASE_URL}/computer"
         # self.AUDIO_FILE = "./src/sound/bonfire.mp3"
         self.AUDIO_FILE = "./src/sound/item.mp3"
         self.COMPUTERS_JSON_FILE = "./src/storage/computers.json"
